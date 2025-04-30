@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Dentro del album";
+}
+
+<h1>@ViewBag.titulo</h1>
+<p>
+Canciones:
+
+@foreach (string cancion in ViewBag.canciones) 
+{
+    <ol>
+        <il>@cancion</il>
+    </ol>
+}
+</p>
